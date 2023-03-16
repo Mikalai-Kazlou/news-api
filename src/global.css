@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 1rem);
+  color: #fff;
+  background: #17181c;
+  font-family: sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  padding: 10px 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+footer .year,
+footer .github,
+footer .copyright {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+footer .github a,
+footer .copyright a {
+  color: #444;
+  text-decoration: none;
+}
+
+footer .github a:hover,
+footer .copyright a:hover {
+  color: #555;
+}
+
+footer .copyright:before {
+  content: '©';
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+  }
+}
